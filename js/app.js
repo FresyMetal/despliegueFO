@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * LÓGICA DE LA PRESENTACIÓN PREMIUM - ISR COMUNICACIONES ESTIVELLA
+ * LÓGICA DE LA PRESENTACIÓN PREMIUM - ISR COMUNICACIONES ALBALAT
  * Desarrollado con GSAP, AOS e Intersection Observer.
  * ==========================================================================
  */

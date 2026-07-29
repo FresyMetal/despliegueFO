@@ -1,6 +1,6 @@
-# Propuesta de Despliegue de Fibra Óptica en Estivella — ISR Comunicaciones
+# Propuesta de Despliegue de Fibra Óptica en Albalat — ISR Comunicaciones
 
-Este repositorio contiene la presentación interactiva web de nivel premium diseñada por nuestro equipo multidisciplinar (Director de Arte, Diseñador UX/UI Senior, Desarrollador Frontend Senior y Comercial de Telecomunicaciones) para ser expuesta ante la alcaldía del **Ayuntamiento de Estivella**.
+Este repositorio contiene la presentación interactiva web de nivel premium diseñada por nuestro equipo multidisciplinar (Director de Arte, Diseñador UX/UI Senior, Desarrollador Frontend Senior y Comercial de Telecomunicaciones) para ser expuesta ante la alcaldía del **Ayuntamiento de Albalat**.
 
 El objetivo principal es convencer al ayuntamiento para autorizar el despliegue de la red de fibra óptica **FTTH de última generación** de **ISR Comunicaciones**, presentándonos como su socio tecnológico local y estratégico.
 
@@ -30,7 +30,7 @@ despliegueFO/
 │   └── app.js           # Lógica de navegación por diapositivas, modal y simuladores interactivos.
 ├── assets/
 │   └── img/
-│       ├── hero_estivella.png   # Imagen conceptual premium de portada (Estivella conectada).
+│       ├── hero_albalat.png   # Imagen conceptual premium de portada (Albalat conectada).
 │       └── outro_connect.png    # Imagen de cierre sobre alianza tecnológica.
 └── README.md            # Este documento de especificaciones técnicas y de diseño.
 ```
@@ -51,8 +51,8 @@ despliegueFO/
 
 ## ⚡ Elementos Interactivos Destacados
 
-1. **Mapa Local SVG Animado (Diapositiva 03):** Muestra de manera interactiva la cercanía operativa real entre la sede central en **Gilet** y el municipio de **Estivella** (6 km, ~8 minutos). El trazado de la fibra tiene una animación de flujo pulsante continua y los nodos pulsan concéntricamente indicando actividad de red constante.
-2. **Esquema de Flujo de Red Activo (Diapositiva 04):** Muestra el camino que recorren los datos desde el Backbone internacional, pasando por la OLT central en Gilet y distribuyéndose de forma simétrica por las acometidas de Estivella, con un efecto de flujo de paquetes de datos en movimiento.
+1. **Mapa Local SVG Animado (Diapositiva 03):** Muestra de manera interactiva la cercanía operativa real entre la sede central en **Gilet** y el municipio de **Albalat** (6 km, ~8 minutos). El trazado de la fibra tiene una animación de flujo pulsante continua y los nodos pulsan concéntricamente indicando actividad de red constante.
+2. **Esquema de Flujo de Red Activo (Diapositiva 04):** Muestra el camino que recorren los datos desde el Backbone internacional, pasando por la OLT central en Gilet y distribuyéndose de forma simétrica por las acometidas de Albalat, con un efecto de flujo de paquetes de datos en movimiento.
 3. **Simulador de Ancho de Banda (Diapositiva 06):** Permite al alcalde o técnico municipal interactuar con tres niveles de conexión (600M, 1G y 10G) para ver cómo reacciona físicamente el velocímetro mediante rotaciones de aguja animadas por CSS y un contador dinámico que incrementa en tiempo real, acompañando la explicación de usos cotidianos.
 4. **Fases del Plan de Despliegue Secuencial (Diapositiva 09):** Cuando se accede a esta sección, la línea de tiempo se auto-dibuja y los hitos se encienden cronológicamente con un efecto de rebote suave (`ease-out-back`). También permite hacer clic individual sobre cualquier fase para examinar los hitos.
 5. **Modal de Reunión Técnica Profesional:** Diseñado con un formulario interactivo y respuestas simuladas con tiempos de respuesta de servicio inmediato para dejar clara nuestra agilidad de operador de cercanía.
