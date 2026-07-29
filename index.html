@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISR Comunicaciones - Propuesta de Despliegue de Fibra Óptica en Estivella</title>
+    <meta name="description" content="Propuesta tecnológica e institucional de ISR Comunicaciones para el despliegue de fibra óptica FTTH de última generación en el municipio de Estivella.">
+    <!-- Google Fonts: Outfit e Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Fijo (Estilo Tesla/Apple) -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-isr">ISR</span>
+            <span class="logo-sub">Comunicaciones</span>
+        </div>
+        <nav class="desktop-menu">
+            <span class="nav-status"><i class="fa-solid fa-circle-nodes pulse-icon"></i> Propuesta Estivella 2026</span>
+        </nav>
+        <div class="header-actions">
+            <button class="btn btn-header-contact" onclick="openContactModal()">Contactar</button>
+            <button class="menu-toggle" id="menuToggleBtn" aria-label="Abrir Menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menú de Navegación Lateral Desplegable (Estilo Keynote) -->
+    <div class="slide-navigation-menu" id="slideNavMenu">
+        <div class="menu-header">
+            <h3>Índice de la Propuesta</h3>
+            <button class="close-menu-btn" id="closeMenuBtn">&times;</button>
+        </div>
+        <ul class="menu-list">
+            <li data-target="0" class="active"><span class="num">01</span> Portada</li>
+            <li data-target="1"><span class="num">02</span> Quién es ISR</li>
+            <li data-target="2"><span class="num">03</span> Operador Local</li>
+            <li data-target="3"><span class="num">04</span> Nuestra Red</li>
+            <li data-target="4"><span class="num">05</span> Beneficios Ayuntamiento</li>
+            <li data-target="5"><span class="num">06</span> Beneficios Vecinos</li>
+            <li data-target="6"><span class="num">07</span> Beneficios Empresas</li>
+            <li data-target="7"><span class="num">08</span> Comparativa</li>
+            <li data-target="8"><span class="num">09</span> Plan de Despliegue</li>
+            <li data-target="9"><span class="num">10</span> Compromisos</li>
+            <li data-target="10"><span class="num">11</span> Alianza Tecnológica</li>
+        </ul>
+    </div>
+
+    <!-- Indicador de Slide Lateral (Dots) -->
+    <div class="side-dots-indicator" id="sideDotsIndicator">
+        <!-- Generados por JS -->
+    </div>
+
+    <!-- Contenedor Principal de la Presentación -->
+    <main class="presentation-wrapper" id="presentationContainer">
+
+        <!-- 01 PORTADA -->
+        <section class="slide-section active" id="slide-0">
+            <div class="slide-bg" style="background-image: linear-gradient(to bottom, rgba(10,11,15,0.7) 0%, rgba(10,11,15,0.95) 100%), url('assets/img/hero_estivella.png');"></div>
+            <div class="slide-content container hero-layout">
+                <div class="hero-text-block">
+                    <span class="badge" data-aos="fade-down" data-aos-duration="1000"><i class="fa-solid fa-bolt"></i> Conectividad de Siguiente Generación</span>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        Conectando el futuro<br>de <span class="highlight-text">Estivella</span>
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        Propuesta de colaboración institucional para el despliegue integral de fibra óptica simétrica hasta 10 Gbps.
+                    </p>
+                    <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                        <button class="btn btn-primary btn-large btn-next-slide">
+                            Comenzar Presentación <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div class="footer-info">ISR Comunicaciones &copy; 2026 | Propuesta Tecnológica Municipal</div>
+                <div class="scroll-prompt"><span class="mouse-icon"><span class="wheel"></span></span> Scroll o Flechas para avanzar</div>
+            </div>
+        </section>
+
+        <!-- 02 QUIÉN ES ISR -->
+        <section class="slide-section" id="slide-1">
+            <div class="slide-bg-gradient"></div>
+            <div class="slide-content container grid-2">
+                <div class="slide-text-side">
+                    <span class="slide-num-tag">02 / 11</span>
+                    <h2 class="section-title">Quién es <span class="highlight-text">ISR Comunicaciones</span></h2>
+                    <p class="section-desc">
+                        Somos un operador de telecomunicaciones de cercanía fundado en el **Camp de Morvedre**, con sede central en Gilet. Desarrollamos infraestructuras de telecomunicaciones de última generación con una filosofía clara: tecnología de vanguardia y servicio humano directo.
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <div>
+                                <h4>Infraestructura Propia</h4>
+                                <p>Desplegamos y gestionamos nuestra propia red de fibra óptica FTTH.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon"><i class="fa-solid fa-face-smile"></i></div>
+                            <div>
+                                <h4>Atención 100% Humana</h4>
+                                <p>Sin centralitas automáticas complejas. Personas atendiendo a personas.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <h4>Compromiso Local</h4>
+                                <p>Inversión directa y generación de empleo en la propia comarca.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-visual-side">
+                    <div class="glass-card services-showcase" data-aos="zoom-in" data-aos-duration="800">
+                        <h3>Nuestra Cartera de Servicios</h3>
+                        <div class="services-grid">
+                            <div class="service-box">
+                                <i class="fa-solid fa-gauge-high"></i>
+                                <span>Fibra FTTH 10G</span>
+                            </div>
+                            <div class="service-box">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span>Móvil 5G</span>
+                            </div>
+                            <div class="service-box">
+                                <i class="fa-solid fa-tv"></i>
+                                <span>Televisión HD</span>
+                            </div>
+                            <div class="service-box">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Empresas</span>
+                            </div>
+                            <div class="service-box">
+                                <i class="fa-solid fa-server"></i>
+                                <span>Servicios Cloud</span>
+                            </div>
+                            <div class="service-box">
+                                <i class="fa-solid fa-user-shield"></i>
+                                <span>Redes y VPN</span>
+                            </div>
+                            <div class="service-box">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>Telefonía IP</span>
+                            </div>
+                            <div class="service-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Soporte 24/7</span>
+                            </div>
+                        </div>
+                        <div class="card-footer-info">
+                            <i class="fa-solid fa-circle-info"></i> Una red robusta, de alta disponibilidad y redundada para asegurar el servicio continuo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 ¿POR QUÉ UN OPERADOR LOCAL? -->
+        <section class="slide-section" id="slide-2">
+            <div class="slide-bg-gradient"></div>
+            <div class="slide-content container grid-2">
+                <div class="slide-visual-side map-container-side">
+                    <div class="glass-card map-card" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="card-badge"><i class="fa-solid fa-location-crosshairs"></i> Proximidad Estratégica</div>
+                        <!-- Mapa Vectorial Interactivo SVG Gilet -> Estivella -->
+                        <div class="svg-map-wrapper">
+                            <svg viewBox="0 0 400 300" class="local-svg-map" id="mapSvg">
+                                <!-- Background grid -->
+                                <defs>
+                                    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                                    </pattern>
+                                    <linearGradient id="fiberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00f2fe" />
+                                        <stop offset="100%" stop-color="#4facfe" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="100%" height="100%" fill="url(#grid)" />
+                                
+                                <!-- Valle / relieve sutil -->
+                                <path d="M 50,150 Q 120,80 220,120 T 350,90" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="4" stroke-dasharray="5 5" />
+                                <path d="M 30,220 Q 150,180 280,240 T 380,180" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="3" stroke-dasharray="10 5" />
+                                
+                                <!-- Línea de Fibra Óptica Óptica Conectando Gilet y Estivella -->
+                                <path id="fiberPath" d="M 120,220 Q 200,150 280,80" fill="none" stroke="url(#fiberGrad)" stroke-width="4" class="animated-path" />
+                                
+                                <!-- Nodo Gilet (Sede ISR) -->
+                                <g class="map-node" transform="translate(120, 220)" id="nodeGilet">
+                                    <circle r="22" fill="rgba(79, 172, 254, 0.2)" class="pulse-ring" />
+                                    <circle r="12" fill="rgba(79, 172, 254, 0.4)" class="pulse-ring-slow" />
+                                    <circle r="7" fill="#00f2fe" />
+                                    <text y="-30" class="map-label label-left">GILET (Sede Central)</text>
+                                    <text y="-15" class="map-sublabel label-left">Centro de Soporte Técnico</text>
+                                </g>
+
+                                <!-- Nodo Estivella -->
+                                <g class="map-node" transform="translate(280, 80)" id="nodeEstivella">
+                                    <circle r="22" fill="rgba(122, 79, 254, 0.2)" class="pulse-ring-violet" />
+                                    <circle r="12" fill="rgba(122, 79, 254, 0.4)" class="pulse-ring-slow" />
+                                    <circle r="7" fill="#7a4ffe" />
+                                    <text y="-30" class="map-label">ESTIVELLA</text>
+                                    <text y="-15" class="map-sublabel">Zona de Despliegue</text>
+                                </g>
+
+                                <!-- Información de Distancia / Tiempo -->
+                                <g transform="translate(200, 165)" class="map-distance-badge">
+                                    <rect x="-45" y="-12" width="90" height="24" rx="12" fill="#12131a" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+                                    <text text-anchor="middle" y="4" fill="#00f2fe" font-size="10" font-family="'Outfit', sans-serif" font-weight="bold">6 km (~8 min)</text>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-text-side">
+                    <span class="slide-num-tag">03 / 11</span>
+                    <h2 class="section-title">¿Por qué un <span class="highlight-text">operador local</span>?</h2>
+                    <p class="section-desc">
+                        A diferencia de las multinacionales de telecomunicaciones, nuestra cercanía no es solo un argumento comercial; es una **ventaja operativa real** para el Ayuntamiento y los vecinos de Estivella.
+                    </p>
+                    <div class="local-benefits">
+                        <div class="benefit-card-inline" data-aos="fade-left" data-aos-delay="100">
+                            <div class="inline-icon cyan"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                            <div class="inline-text">
+                                <h3>Soporte Técnico en Minutos</h3>
+                                <p>Sede en Gilet (a menos de 6 km). Ante cualquier incidencia física o corte, nuestros equipos técnicos se desplazan de forma inmediata, llegando a Estivella en minutos.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-card-inline" data-aos="fade-left" data-aos-delay="200">
+                            <div class="inline-text-right-icon">
+                                <h3>Técnicos e Ingeniería Propios</h3>
+                                <p>No subcontratamos el soporte ni el mantenimiento. Las personas que diseñan, despliegan y mantienen la red son parte de nuestra plantilla, con conocimiento exhaustivo de la comarca.</p>
+                            </div>
+                            <div class="inline-icon violet"><i class="fa-solid fa-user-gear"></i></div>
+                        </div>
+                        <div class="benefit-card-inline" data-aos="fade-left" data-aos-delay="300">
+                            <div class="inline-icon green"><i class="fa-solid fa-handshake"></i></div>
+                            <div class="inline-text">
+                                <h3>Trato Cercano y Sin Barreras</h3>
+                                <p>Comunicación directa con los gestores del proyecto. Sin centralitas automáticas ni procesos burocráticos. Tu interlocutor es un técnico local comprometido.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 NUESTRA RED -->
+        <section class="slide-section" id="slide-3">
+            <div class="slide-bg-gradient"></div>
+            <div class="slide-content container network-layout">
+                <div class="network-header">
+                    <span class="slide-num-tag">04 / 11</span>
+                    <h2 class="section-title">Una infraestructura de <span class="highlight-text">última generación</span></h2>
+                    <p class="network-subtitle">
+                        Desplegamos tecnología **FTTH activa sobre estándar XGS-PON**, permitiendo velocidades reales y simétricas de **hasta 10 Gbps**. Una arquitectura robusta, segura y escalable de cara al futuro.
+                    </p>
+                </div>
+                
+                <!-- Animación de flujo de Red -->
+                <div class="network-diagram-container">
+                    <div class="network-step" id="net-step-1" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-icon-container">
+                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                            <div class="step-pulse"></div>
+                        </div>
+                        <h4>Backbone</h4>
+                        <p>Tránsito de Internet de gran capacidad, redundado geográficamente.</p>
+                    </div>
+                    <div class="step-connector" id="conn-1">
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="network-step" id="net-step-2" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-icon-container">
+                            <i class="fa-solid fa-server"></i>
+                            <div class="step-pulse"></div>
+                        </div>
+                        <h4>Nodo Central (OLT)</h4>
+                        <p>Equipamiento tecnológico activo redundante ubicado en Gilet.</p>
+                    </div>
+                    <div class="step-connector" id="conn-2">
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="network-step" id="net-step-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-icon-container">
+                            <i class="fa-solid fa-route"></i>
+                            <div class="step-pulse"></div>
+                        </div>
+                        <h4>Red de Fibra</h4>
+                        <p>Fibra óptica pura monomodo con tendido optimizado en Estivella.</p>
+                    </div>
+                    <div class="step-connector" id="conn-3">
+                        <div class="pulse-dot"></div>
+                    </div>
+                    
+                    <!-- Destinos Diversificados -->
+                    <div class="network-destinations">
+                        <div class="dest-step" id="net-dest-1" data-aos="fade-left" data-aos-delay="400">
+                            <div class="dest-icon-container"><i class="fa-solid fa-house"></i></div>
+                            <h5>Viviendas</h5>
+                            <span>Fibra Directa</span>
+                        </div>
+                        <div class="dest-step" id="net-dest-2" data-aos="fade-left" data-aos-delay="500">
+                            <div class="dest-icon-container"><i class="fa-solid fa-building"></i></div>
+                            <h5>Empresas</h5>
+                            <span>Caudal Garantizado</span>
+                        </div>
+                        <div class="dest-step" id="net-dest-3" data-aos="fade-left" data-aos-delay="600">
+                            <div class="dest-icon-container"><i class="fa-solid fa-building-columns"></i></div>
+                            <h5>Ayuntamiento</h5>
+                            <span>Socio Tecnológico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-highlight-box" data-aos="fade-up" data-aos-delay="700">
+                    <div class="stat-highlight">
+                        <span class="stat-num">10 <span class="stat-unit">Gbps</span></span>
+                        <span class="stat-label">Capacidad Simétrica Disponible</span>
+                    </div>
+                    <div class="stat-explain">
+                        Nuestra red no solo cubre las necesidades actuales, sino que está diseñada para soportar los servicios de la próxima década: Smart Cities, Internet de las Cosas (IoT), videovigilancia AI y gestión remota del agua.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 BENEFICIOS PARA EL AYUNTAMIENTO -->
+        <section class="slide-section" id="slide-4">
+            <div class="slide-bg-gradient"></div>
+            <div class="slide-content container grid-2">
+                <div class="slide-text-side">
+                    <span class="slide-num-tag">05 / 11</span>
+                    <h2 class="section-title">El motor de la <span class="highlight-text">digitalización municipal</span></h2>
+                    <p class="section-desc">
+                        Queremos dotar a la administración pública de Estivella de la conectividad necesaria para una gestión moderna, eficiente y orientada al ciudadano.
+                    </p>
+                    <div class="benefits-grid">
+                        <div class="benefit-card-compact" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
+                            <h3>Edificios Públicos</h3>
+                            <p>Conexión de alta velocidad en el ayuntamiento, colegios, biblioteca y centros sociales, eliminando cuellos de botella.</p>
+                        </div>
+                        <div class="benefit-card-compact" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-icon"><i class="fa-solid fa-wifi"></i></div>
+                            <h3>WiFi Municipal</h3>
+                            <p>Zonas WiFi públicas y seguras en plazas, parques y áreas deportivas para turistas y ciudadanos.</p>
+                        </div>
+                        <div class="benefit-card-compact" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-icon"><i class="fa-solid fa-video"></i></div>
+                            <h3>Cámaras de Seguridad</h3>
+                            <p>Ancho de banda garantizado para la interconexión de cámaras de seguridad ciudadana y de tráfico.</p>
+                        </div>
+                        <div class="benefit-card-compact" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h3>Policía Local</h3>
+                            <p>Acceso rápido a bases de datos nacionales y sistemas internos de emergencias desde el retén o vehículos.</p>
+                        </div>
+                        <div class="benefit-card-compact" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-icon"><i class="fa-solid fa-laptop-house"></i></div>
+                            <h3>Atracción de Teletrabajo</h3>
+                            <p>Firme infraestructura para posicionar Estivella como el enclave rural ideal para teletrabajadores.</p>
+                        </div>
+                        <div class="benefit-card-compact" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+                            <h3>Turismo Conectado</h3>
+                            <p>Servicios de conectividad y QR turísticos en rutas del entorno natural como el Garbí.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-visual-side flex-center">
+                    <div class="glass-card big-info-card" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="info-tag-top">Administración Eficiente</div>
+                        <h3 class="card-large-heading">Hacia una Smart City en el Camp de Morvedre</h3>
+                        <p class="card-large-desc">
+                            El despliegue de ISR Comunicaciones permitirá interconectar sensores y servicios municipales en tiempo real:
+                        </p>
+                        <ul class="check-list">
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>Telemedida de agua:</strong> Detección de fugas en la red de abastecimiento.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>Alumbrado inteligente:</strong> Regulación de consumo según presencia y horario.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>Sensores medioambientales:</strong> Control de calidad del aire y prevención de incendios forestales.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>Sede electrónica:</strong> Trámites administrativos un 90% más ágiles.</li>
+                        </ul>
+                        <div class="cta-inside-card">
+                            <span class="highlight-mini">Inversión 100% privada de ISR</span> Sin coste para las arcas municipales.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06 BENEFICIOS PARA VECINOS -->
+        <section class="slide-section" id="slide-5">
+            <div class="slide-bg-gradient"></div>
+            <div class="slide-content container grid-2">
+                <div class="slide-visual-side flex-center">
+                    <div class="glass-card visual-interactive-card" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="speed-indicator-wrapper">
+                            <div class="speed-meter">
+                                <div class="speed-needle" id="speedNeedle"></div>
+                                <div class="speed-number" id="speedNum">0</div>
+                                <div class="speed-unit">Mbps Simétricos</div>
+                            </div>
+                        </div>
+                        <div class="interactive-speed-info">
+                            <h4>Prueba la velocidad teórica:</h4>
+                            <div class="buttons-speed-selector">
+                                <button class="btn btn-speed active" data-speed="600">600M</button>
+                                <button class="btn btn-speed" data-speed="1000">1Gbps</button>
+                                <button class="btn btn-speed" data-speed="10000">10Gbps</button>
+                            </div>
+                            <p class="speed-desc-text" id="speedDesc">Perfecto para familias numerosas y teletrabajo intensivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-text-side">
+                    <span class="slide-num-tag">06 / 11</span>
+                    <h2 class="section-title">Calidad de vida y conectividad para los <span class="highlight-text">vecinos</span></h2>
+                    <p class="section-desc">
+                        Llevar la fibra óptica ultrarrápida a cada vivienda de Estivella es garantizar que las familias tengan las mismas o mejores oportunidades que en cualquier capital de provincia.
+                    </p>
+                    <div class="grid-2-cols gap-md">
+                        <div class="benefit-box-simple" data-aos="fade-up" data-aos-delay="100">
+                            <div class="box-icon cian"><i class="fa-solid fa-circle-play"></i></div>
+                            <h4>Streaming 4K e Interactivo</h4>
+                            <p>Visualización simultánea de series, películas y eventos deportivos sin esperas ni cortes.</p>
+                        </div>
+                        <div class="benefit-box-simple" data-aos="fade-up" data-aos-delay="200">
+                            <div class="box-icon violet"><i class="fa-solid fa-gamepad"></i></div>
+                            <h4>Gaming sin Latencia</h4>
+                            <p>Conexiones estables con ping mínimo para jugadores online exigentes en Estivella.</p>
+                        </div>
+                        <div class="benefit-box-simple" data-aos="fade-up" data-aos-delay="300">
+                            <div class="box-icon green"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <h4>Educación Digital</h4>
+                            <p>Clases online, descarga de contenidos educativos y acceso a formación universitaria sin barreras.</p>
+                        </div>
+                        <div class="benefit-box-simple" data-aos="fade-up" data-aos-delay="400">
+                            <div class="box-icon yellow"><i class="fa-solid fa-house-laptop"></i></div>
+                            <h4>Teletrabajo de Calidad</h4>
+                            <p>Videollamadas 4K nítidas y subidas masivas de archivos sin colapsar la conexión del hogar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 07 BENEFICIOS PARA EMPRESAS -->
+        <section class="slide-section" id="slide-6">
+            <div class="slide-bg-gradient"></div>
+            <div class="slide-content container grid-2">
+                <div class="slide-text-side">
+                    <span class="slide-num-tag">07 / 11</span>
+                    <h2 class="section-title">Impulsando el tejido <span class="highlight-text">empresarial local</span></h2>
+                    <p class="section-desc">
+                        Las pymes, comercios y casas rurales de Estivella necesitan herramientas digitales robustas para competir globalmente, mejorar su productividad y ofrecer mejores servicios.
+                    </p>
+                    <div class="business-features">
+                        <div class="b-feature" data-aos="fade-right" data-aos-delay="100">
+                            <div class="bf-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <div class="bf-content">
+                                <h4>Redes Privadas Virtuales (VPN)</h4>
+                                <p>Interconexión segura y rápida de diferentes sedes, permitiendo el teletrabajo seguro y el acceso a recursos corporativos remotos.</p>
+                            </div>
+                        </div>
+                        <div class="b-feature" data-aos="fade-right" data-aos-delay="200">
+                            <div class="bf-icon"><i class="fa-solid fa-tty"></i></div>
+                            <div class="bf-content">
+                                <h4>Telefonía IP Avanzada</h4>
+                                <p>Sistemas de voz profesional que optimizan costes, aportan numeración avanzada y centralitas en la nube sin inversión física.</p>
+                            </div>
+                        </div>
+                        <div class="b-feature" data-aos="fade-right" data-aos-delay="300">
+                            <div class="bf-icon"><i class="fa-solid fa-cloud"></i></div>
+                            <div class="bf-content">
+                                <h4>Nube y Backups</h4>
+                                <p>Sincronización instantánea de bases de datos, almacenamiento en Cloud y copias de seguridad remotas automatizadas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-visual-side flex-center">
+                    <div class="glass-card premium-business-card" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div class="business-header">
+                            <span class="biz-tag">Servicio Corporativo</span>
+                            <h3>Fibra Óptica Dedicada</h3>
+                        </div>
+                        <div class="business-metrics">
+                            <div class="metric-item">
+                                <span class="m-val">99.99%</span>
+                                <span class="m-lbl">SLA Garantizado</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="m-val">&lt; 4h</span>
+                                <span class="m-lbl">Tiempo de Resolución</span>
+                            </div>
+                        </div>
+                        <p class="biz-desc">
+                            Para las industrias y comercios con necesidades críticas de comunicación, ofrecemos líneas con direccionamiento IP estático, simetría garantizada y monitorización activa de red 24/7.
+                        </p>
+                        <div class="biz-footer">
+                            <i class="fa-solid fa-shield-halved"></i> Seguridad perimetral integrada y cortafuegos de red de serie.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 08 COMPARATIVA -->
+        <section class="slide-section" id="slide-7">
+            <div class="slide-bg-gradient"></div>
+            <div class="slide-content container compare-layout">
+                <div class="compare-header">
+                    <span class="slide-num-tag">08 / 11</span>
+                    <h2 class="section-title">Ventajas de un <span class="highlight-text">socio local</span></h2>
+                    <p class="compare-desc">
+                        Una comparación objetiva basada en la calidad del servicio, la proximidad operativa y el compromiso territorial.
+                    </p>
+                </div>
+                <div class="compare-table-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th class="highlight-col"><img src="" alt="" style="display:none;"> ISR Comunicaciones</th>
+                                <th>Grandes Operadores Nacionales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-clock-rotate-left"></i> Tiempo de respuesta físico</td>
+                                <td class="highlight-col bold-text text-cyan">En minutos (&lt; 2 horas garantizado)</td>
+                                <td>De 24 a 72 horas hábiles</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-headset"></i> Atención telefónica</td>
+                                <td class="highlight-col bold-text">Humana y directa (Sede en Gilet)</td>
+                                <td>Centralitas automáticas y Call Centers</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-screwdriver-wrench"></i> Personal de soporte</td>
+                                <td class="highlight-col bold-text text-cyan">Técnicos propios especializados</td>
+                                <td>Subcontratas de terceros aleatorias</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-circle-dollar-to-slot"></i> Retorno económico</td>
+                                <td class="highlight-col bold-text">Impuestos y empleo locales (Camp de Morvedre)</td>
+                                <td>Capitalización centralizada fuera de la C.V.</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-signal"></i> Red desplegada</td>
+                                <td class="highlight-col bold-text text-cyan">Propia y optimizada para la orografía local</td>
+                                <td>Uso de redes ajenas o compartidas</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-sliders"></i> Flexibilidad contractual</td>
+                                <td class="highlight-col bold-text">Adaptación a necesidades del Ayuntamiento</td>
+                                <td>Planes estandarizados rígidos e inflexibles</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="compare-footer-note">
+                    * Todos los datos técnicos están garantizados por contrato e incluidos en el pliego de condiciones de despliegue.
+                </div>
+            </div>
+        </section>
+
+        <!-- 09 PLAN DE DESPLIEGUE -->
+        <section class="slide-section" id="slide-8">
+            <div class="slide-bg-gradient"></div>
+            <div class="slide-content container timeline-layout">
+                <div class="timeline-header">
+                    <span class="slide-num-tag">09 / 11</span>
+                    <h2 class="section-title">Cronograma y <span class="highlight-text">fases de ejecución</span></h2>
+                    <p class="timeline-subtitle">
+                        Un despliegue ágil, ordenado y planificado para minimizar el impacto en el día a día del municipio.
+                    </p>
+                </div>
+                
+                <!-- Línea de tiempo horizontal animada -->
+                <div class="timeline-container">
+                    <div class="timeline-line">
+                        <div class="timeline-progress" id="timelineProgress"></div>
+                    </div>
+                    
+                    <div class="timeline-nodes-wrapper">
+                        <!-- Nodo 1 -->
+                        <div class="timeline-node active" data-step="1">
+                            <div class="node-dot">1</div>
+                            <div class="node-content">
+                                <h3>Estudio de Campo</h3>
+                                <span class="node-duration">Semana 1-2</span>
+                                <p>Análisis de canalizaciones existentes, cartografía municipal y diseño de red troncal.</p>
+                            </div>
+                        </div>
+                        <!-- Nodo 2 -->
+                        <div class="timeline-node" data-step="2">
+                            <div class="node-dot">2</div>
+                            <div class="node-content">
+                                <h3>Proyecto Técnico</h3>
+                                <span class="node-duration">Semana 3-4</span>
+                                <p>Redacción del proyecto técnico de despliegue y visado por el colegio de ingenieros.</p>
+                            </div>
+                        </div>
+                        <!-- Nodo 3 -->
+                        <div class="timeline-node" data-step="3">
+                            <div class="node-dot">3</div>
+                            <div class="node-content">
+                                <h3>Permisos</h3>
+                                <span class="node-duration">Semana 5-6</span>
+                                <p>Tramitación de licencias municipales y acuerdos de fachada en comunidades.</p>
+                            </div>
+                        </div>
+                        <!-- Nodo 4 -->
+                        <div class="timeline-node" data-step="4">
+                            <div class="node-dot">4</div>
+                            <div class="node-content">
+                                <h3>Instalación</h3>
+                                <span class="node-duration">Semana 7-10</span>
+                                <p>Soplado de fibra en canalizaciones, colocación de cajas de distribución (CTO) y empalmes.</p>
+                            </div>
+                        </div>
+                        <!-- Nodo 5 -->
+                        <div class="timeline-node" data-step="5">
+                            <div class="node-dot">5</div>
+                            <div class="node-content">
+                                <h3>Pruebas</h3>
+                                <span class="node-duration">Semana 11</span>
+                                <p>Certificación de potencia óptica, pruebas de carga de tráfico y balanceo de red.</p>
+                            </div>
+                        </div>
+                        <!-- Nodo 6 -->
+                        <div class="timeline-node" data-step="6">
+                            <div class="node-dot">6</div>
+                            <div class="node-content">
+                                <h3>Puesta en Marcha</h3>
+                                <span class="node-duration">Semana 12</span>
+                                <p>Apertura comercial, interconexión de edificios públicos e inicio de altas de vecinos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10 COMPROMISOS -->
+        <section class="slide-section" id="slide-9">
+            <div class="slide-bg-gradient"></div>
+            <div class="slide-content container grid-2">
+                <div class="slide-text-side">
+                    <span class="slide-num-tag">10 / 11</span>
+                    <h2 class="section-title">Nuestros <span class="highlight-text">cinco compromisos</span> firmes</h2>
+                    <p class="section-desc">
+                        Entendemos la responsabilidad que supone desplegar una red en Estivella. Adquirimos estos compromisos formales por escrito con la alcaldía.
+                    </p>
+                    <div class="commitments-container">
+                        <div class="commit-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="commit-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <div class="commit-txt">
+                                <h4>Respeto al entorno y estética rural</h4>
+                                <p>Utilización preferente de canalizaciones subterráneas existentes. Tendido aéreo limpio y ordenado sin impacto en cascos históricos.</p>
+                            </div>
+                        </div>
+                        <div class="commit-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="commit-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                            <div class="commit-txt">
+                                <h4>Rapidez en la ejecución</h4>
+                                <p>Fases de obras rápidas y limpias, coordinadas con los técnicos del ayuntamiento para no perturbar la vida diaria de Estivella.</p>
+                            </div>
+                        </div>
+                        <div class="commit-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="commit-icon"><i class="fa-solid fa-coins"></i></div>
+                            <div class="commit-txt">
+                                <h4>Inversión 100% propia</h4>
+                                <p>Toda la inversión económica corre a cargo de ISR Comunicaciones. Cero coste, cero subvenciones para el consistorio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-visual-side flex-center">
+                    <div class="glass-card commitment-side-card" data-aos="zoom-in" data-aos-duration="800">
+                        <div class="comm-shield"><i class="fa-solid fa-certificate"></i></div>
+                        <h3>Garantía de Calidad</h3>
+                        <p class="comm-text">
+                            "Nuestra sede principal en Gilet no solo nos permite dar soporte inmediato, sino que nos obliga a mantener un estándar de calidad altísimo. Los vecinos de Estivella son nuestros vecinos cotidianos."
+                        </p>
+                        <div class="comm-bullets">
+                            <div class="cb-item"><i class="fa-solid fa-check"></i> Sin coste municipal</div>
+                            <div class="cb-item"><i class="fa-solid fa-check"></i> Redundancia física de red</div>
+                            <div class="cb-item"><i class="fa-solid fa-check"></i> Atención telefónica local</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11 FINAL / ALIANZA TECNOLÓGICA -->
+        <section class="slide-section" id="slide-10">
+            <div class="slide-bg" style="background-image: linear-gradient(to bottom, rgba(10,11,15,0.75) 0%, rgba(10,11,15,0.98) 100%), url('assets/img/outro_connect.png');"></div>
+            <div class="slide-content container hero-layout text-center">
+                <div class="hero-text-block final-block">
+                    <span class="badge badge-large" data-aos="fade-down" data-aos-duration="1000"><i class="fa-solid fa-handshake"></i> Alianza Estratégica</span>
+                    <h2 class="final-heading" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        No queremos ser un proveedor más.<br>
+                        Queremos ser el <span class="highlight-text">socio tecnológico</span> de Estivella.
+                    </h2>
+                    <p class="final-desc" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        Un operador local, fuerte y cercano para impulsar el desarrollo tecnológico de nuestro municipio con la máxima celeridad y respeto.
+                    </p>
+                    <div class="final-cta-group" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                        <button class="btn btn-primary btn-large" onclick="openContactModal()">
+                            Iniciar Colaboración <i class="fa-solid fa-envelope"></i>
+                        </button>
+                        <button class="btn btn-secondary btn-large btn-restart">
+                            Volver a Empezar <i class="fa-solid fa-rotate-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div class="footer-info">ISR Comunicaciones | Plaza de la Estrella, Gilet, Valencia | info@isrcomunicaciones.es</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal de Contacto Premium (Glassmorphism) -->
+    <div class="contact-modal-overlay" id="contactModal">
+        <div class="glass-card contact-modal-card">
+            <button class="close-modal-btn" onclick="closeContactModal()">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-info-side">
+                    <h3>ISR Comunicaciones</h3>
+                    <p>Socio Tecnológico del Municipio</p>
+                    
+                    <div class="contact-details-list">
+                        <div class="cd-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h5>Sede Central</h5>
+                                <p>Gilet, Valencia (Comarca Camp de Morvedre)</p>
+                            </div>
+                        </div>
+                        <div class="cd-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h5>Teléfono Directo</h5>
+                                <p>+34 960 000 000</p>
+                            </div>
+                        </div>
+                        <div class="cd-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h5>Correo Electrónico</h5>
+                                <p>contacto@isrcomunicaciones.es</p>
+                            </div>
+                        </div>
+                        <div class="cd-item">
+                            <i class="fa-solid fa-globe"></i>
+                            <div>
+                                <h5>Página Web</h5>
+                                <p>www.isrcomunicaciones.es</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-form-side">
+                    <h4>Solicitar Reunión Técnica</h4>
+                    <p>Contacta directamente con nuestro equipo de ingeniería de red para coordinar los detalles.</p>
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="form-name">Nombre y Cargo</label>
+                            <input type="text" id="form-name" placeholder="Ej. Alcalde / Concejal de Tecnología" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Correo Electrónico Oficial</label>
+                            <input type="email" id="form-email" placeholder="nombre@estivella.es" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-msg">Mensaje / Propuesta de Fechas</label>
+                            <textarea id="form-msg" rows="4" placeholder="Indique disponibilidad para una reunión de presentación técnica." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                    </form>
+                    <div class="form-success-msg" id="formSuccess">
+                        <i class="fa-solid fa-circle-check"></i> Mensaje enviado correctamente. Nos pondremos en contacto en menos de 2 horas.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP (Core, ScrollTrigger, Observer) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Custom Application JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
