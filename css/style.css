@@ -1678,10 +1678,25 @@ html, body {
    SLIDE 10: COMPROMISOS
    ========================================================================== */
 
+#slide-9 .slide-content {
+    padding-top: 85px;
+    padding-bottom: 60px;
+}
+
+#slide-9 .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+#slide-9 .section-desc {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
 .commitments-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
 
 .commit-item {
