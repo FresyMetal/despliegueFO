@@ -1681,38 +1681,38 @@ html, body {
 .commitments-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
 }
 
 .commit-item {
     display: flex;
-    gap: 20px;
+    gap: 16px;
 }
 
 .commit-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
     background: rgba(5, 196, 107, 0.06);
     border: 1px solid rgba(5, 196, 107, 0.15);
     color: var(--accent-green);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     flex-shrink: 0;
 }
 
 .commit-txt h4 {
     font-family: var(--font-heading);
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 2px;
 }
 .commit-txt p {
     color: var(--color-text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.82rem;
+    line-height: 1.4;
 }
 
 .commitment-side-card {
